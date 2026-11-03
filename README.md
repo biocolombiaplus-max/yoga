@@ -24,3 +24,7 @@ Landing page premium (HTML + CSS + JS puro, sin dependencias) lista para despleg
 - Dispara el evento `Lead` del Pixel al enviar.
 - Hoy funciona en **modo demo** (guarda en el navegador). Para recibir los leads, pon en
   `CONFIG.formEndpoint` una URL de Formspree, Make, Zapier o Google Apps Script (Google Sheets).
+
+## Importante al actualizar
+Cada vez que cambies `styles.css` o `script.js`, sube el número de versión en `index.html`
+(`styles.css?v=5` → `?v=6`, igual para `script.js`). Así los celulares nunca muestran una versión vieja guardada en caché.

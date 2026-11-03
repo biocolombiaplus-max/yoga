@@ -17,7 +17,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Estilos críticos: la pantalla de carga se ve bien incluso antes de que cargue el CSS -->
+  <style>
+    html{background:#1F271D}
+    .preloader{position:fixed;inset:0;z-index:300;background:#1F271D;display:grid;place-content:center;justify-items:center;gap:18px;color:#CFAE6E;transition:opacity .9s,visibility .9s}
+    .preloader svg{width:80px;height:80px}
+    .preloader p{color:#FBF8F2;font:300 1.4rem/1.2 Georgia,serif;letter-spacing:.2em;text-transform:uppercase;margin:0}
+    .loaded .preloader{opacity:0;visibility:hidden}
+  </style>
+  <link rel="stylesheet" href="styles.css?v=5" />
 
   <!-- ============ META PIXEL (descomenta y pon tu ID al lanzar campañas) ============
   <script>
@@ -813,6 +821,6 @@
     </symbol>
   </svg>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=5" defer></script>
 </body>
 </html>

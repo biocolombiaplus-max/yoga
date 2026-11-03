@@ -158,7 +158,7 @@ function renderSchedule() {
       <time>${c.t}</time>
       <div><h4>${c.n}</h4><p>${c.d} · con Alma</p></div>
       <span class="class-mode ${c.m}">${c.m === 'online' ? 'Online en vivo' : 'Presencial'}</span>
-      <a href="#inscripcion" class="btn btn-ghost btn-sm" data-interest="Clases" data-program="${c.n} · ${dayNames[curDay]} ${c.t}">Reservar</a>
+      <a href="#inscripcion" class="btn btn-outline btn-sm" data-interest="Clases" data-program="${c.n} · ${dayNames[curDay]} ${c.t}">Reservar</a>
     </div>`).join('') : `<p class="empty">No hay clases ${curMode === 'online' ? 'online' : 'presenciales'} este día. Prueba con otro 🌿</p>`;
 }
 $$('.toggle button').forEach(b => b.addEventListener('click', () => {

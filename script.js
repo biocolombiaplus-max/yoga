@@ -1,12 +1,12 @@
 /* =========================================================
-   Shanti · Yoga & Retiros — Interacciones
+   Alma Barrientos · Yoga & Retiros — Interacciones
    ========================================================= */
 
 // ====== CONFIGURACIÓN (edita aquí) ======
 const CONFIG = {
   whatsapp: '573000000000',          // Número con indicativo, sin "+"
   formEndpoint: '',                   // URL para recibir inscripciones (Formspree, Make, Zapier, Google Apps Script…). Vacío = modo demo
-  waMessage: 'Hola 🌿 Quiero información sobre las clases y retiros de Shanti.'
+  waMessage: 'Hola 🌿 Quiero información sobre las clases y retiros de Alma Barrientos.'
 };
 
 // Horario semanal (0 = lunes)
@@ -21,6 +21,11 @@ const SCHEDULE = [
 ];
 
 document.documentElement.classList.remove('no-js');
+
+// ---------- Preloader ----------
+const showPage = () => document.documentElement.classList.add('loaded');
+window.addEventListener('load', () => setTimeout(showPage, 700));
+setTimeout(showPage, 2500); // por si alguna imagen tarda
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 const waLink = (msg = CONFIG.waMessage) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
@@ -43,11 +48,13 @@ toggle.addEventListener('click', () => {
   const open = toggle.getAttribute('aria-expanded') !== 'true';
   toggle.setAttribute('aria-expanded', open);
   links.classList.toggle('open', open);
+  nav.classList.toggle('menu-open', open);
   document.body.style.overflow = open ? 'hidden' : '';
 });
 $$('a', links).forEach(a => a.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', 'false');
   links.classList.remove('open');
+  nav.classList.remove('menu-open');
   document.body.style.overflow = '';
 }));
 
@@ -61,7 +68,7 @@ $$('.reveal').forEach(el => io.observe(el));
 const countIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
-    const el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || '';
+    const el = e.target, end = +el.dataset.count, suf = '';
     const t0 = performance.now(), dur = 1800;
     const step = now => {
       const p = Math.min((now - t0) / dur, 1), v = Math.round(end * (1 - Math.pow(1 - p, 3)));
@@ -81,7 +88,7 @@ breath.addEventListener('click', () => {
   if (breathTimer) {
     clearTimeout(breathTimer); breathTimer = null;
     breath.classList.remove('active');
-    bLabel.textContent = 'Respira con nosotros'; bSub.textContent = 'Toca el círculo · 1 minuto';
+    bLabel.textContent = 'Respira conmigo'; bSub.textContent = 'Toca el círculo · 1 minuto';
     return;
   }
   const phases = [['Inhala…', 4000], ['Sostén…', 4000], ['Exhala lento…', 6000]];
@@ -100,6 +107,32 @@ breath.addEventListener('click', () => {
   };
   run();
 });
+
+// ---------- Manifiesto: palabras que se iluminan ----------
+const mText = $('#manifestoText');
+mText.innerHTML = mText.textContent.trim().split(/\s+/).map(w => `<span class="w">${w}</span>`).join(' ');
+const words = $$('.w', mText);
+
+// ---------- Parallax ----------
+const layers = $$('[data-speed]');
+const retreatBg = $('.retreat-bg');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let ticking = false;
+function onFrame() {
+  ticking = false;
+  const y = window.scrollY, vh = window.innerHeight;
+  if (!reduceMotion && y < vh * 1.2) layers.forEach(l => { l.style.transform = `translate3d(0, ${y * +l.dataset.speed}px, 0)`; });
+  if (!reduceMotion && retreatBg) {
+    const r = retreatBg.parentElement.getBoundingClientRect();
+    if (r.top < vh && r.bottom > 0) retreatBg.style.transform = `translate3d(0, ${(r.top - vh / 2) * -0.12}px, 0)`;
+  }
+  const mr = mText.getBoundingClientRect();
+  const p = Math.min(1, Math.max(0, (vh * 0.85 - mr.top) / (mr.height + vh * 0.35)));
+  const n = Math.round(p * words.length);
+  words.forEach((w, i) => w.classList.toggle('on', i < n));
+}
+window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onFrame); } }, { passive: true });
+onFrame();
 
 // ---------- Horarios ----------
 const dayNames = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
@@ -123,7 +156,7 @@ function renderSchedule() {
   listEl.innerHTML = items.length ? items.map(c => `
     <div class="class-row">
       <time>${c.t}</time>
-      <div><h4>${c.n}</h4><p>${c.d} · con Valentina</p></div>
+      <div><h4>${c.n}</h4><p>${c.d} · con Alma</p></div>
       <span class="class-mode ${c.m}">${c.m === 'online' ? 'Online en vivo' : 'Presencial'}</span>
       <a href="#inscripcion" class="btn btn-ghost btn-sm" data-interest="Clases" data-program="${c.n} · ${dayNames[curDay]} ${c.t}">Reservar</a>
     </div>`).join('') : `<p class="empty">No hay clases ${curMode === 'online' ? 'online' : 'presenciales'} este día. Prueba con otro 🌿</p>`;
@@ -229,7 +262,7 @@ form.addEventListener('submit', async e => {
       await fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
     } else {
       await new Promise(r => setTimeout(r, 900)); // modo demo
-      try { const leads = JSON.parse(localStorage.getItem('shanti_leads') || '[]'); leads.push(data); localStorage.setItem('shanti_leads', JSON.stringify(leads)); } catch (_) {}
+      try { const leads = JSON.parse(localStorage.getItem('alma_leads') || '[]'); leads.push(data); localStorage.setItem('alma_leads', JSON.stringify(leads)); } catch (_) {}
     }
     if (window.fbq) fbq('track', 'Lead', { content_name: data.interes });
   } catch (_) { /* aun así mostramos éxito y ofrecemos WhatsApp */ }

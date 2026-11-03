@@ -1,4 +1,4 @@
-# Shanti · Landing de Yoga, Eventos y Retiros
+# Alma Barrientos · Landing de Yoga, Eventos y Retiros
 
 Landing page premium (HTML + CSS + JS puro, sin dependencias) lista para desplegar en **Vercel**.
 
@@ -15,7 +15,7 @@ Landing page premium (HTML + CSS + JS puro, sin dependencias) lista para despleg
 | Horario semanal de clases | `script.js` → `SCHEDULE` |
 | Fecha de la cuenta regresiva del retiro | `index.html` → `data-date` en `#countdown` |
 | Colores y tipografías | `styles.css` → `:root` |
-| Fotos | Reemplaza las URLs `--img:url(...)` por tus fotos (ideal: súbelas a `/assets`) |
+| Fotos | Sube tus fotos a `/assets` con estos nombres y aparecen solas: `alma-hero.jpg` (portada), `alma.jpg` (retrato de Alma), `clase.jpg`, `clases.jpg`, `retiro.jpg`, `eventos.jpg`, `cocora.jpg`. Si una foto no existe, se muestra una foto de stock o una ilustración artística. |
 | Meta Pixel | `index.html` → descomenta el bloque y pon tu `PIXEL_ID` |
 
 ## Formulario

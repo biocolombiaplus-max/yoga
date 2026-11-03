@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shanti · Yoga, Retiros y Bienestar | Clases presenciales y online</title>
-  <meta name="description" content="Clases de yoga presenciales y online, eventos y retiros de bienestar guiados por una maestra certificada RYT-500. Reserva tu primera clase gratis y vuelve a ti." />
-  <meta name="theme-color" content="#F6F1EA" />
+  <title>Alma Barrientos · Yoga, Retiros y Bienestar</title>
+  <meta name="description" content="Clases de yoga presenciales y online, eventos y retiros de bienestar con Alma Barrientos, maestra certificada RYT-500. Reserva tu primera clase gratis." />
+  <meta name="theme-color" content="#1F271D" />
 
-  <!-- Open Graph (cómo se ve al compartir en WhatsApp, Facebook, Instagram) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Shanti · Vuelve a ti. Yoga, retiros y bienestar" />
+  <meta property="og:title" content="Alma Barrientos · Yoga para volver a ti" />
   <meta property="og:description" content="Clases, eventos y retiros que te devuelven la calma. Tu primera clase es gratis." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -17,10 +16,10 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- ============ META PIXEL (activar cuando lances la campaña) ============
+  <!-- ============ META PIXEL (descomenta y pon tu ID al lanzar campañas) ============
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -29,135 +28,156 @@
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', 'TU_PIXEL_ID'); fbq('track', 'PageView');
   </script>
-  ======================================================================= -->
+  ================================================================================ -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "Shanti Yoga & Retiros",
-    "description": "Clases de yoga, eventos y retiros de bienestar.",
-    "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "312" }
+    "@type": "Person",
+    "name": "Alma Barrientos",
+    "jobTitle": "Maestra de yoga y facilitadora de retiros",
+    "knowsAbout": ["Yoga", "Meditación", "Mindfulness", "Retiros de bienestar"]
   }
   </script>
 </head>
 <body>
 
-  <!-- ===== Barra de anuncio ===== -->
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <svg viewBox="0 0 48 48" class="pre-lotus"><use href="#lotus"/></svg>
+    <p>Alma Barrientos</p>
+  </div>
+
+  <!-- ===== Anuncio ===== -->
   <div class="announce">
     <span class="dot-live"></span>
-    <p><strong>Retiro “Raíces”</strong> · Valle del Cocora · 12 al 15 de marzo · <span class="announce-seats">Quedan 6 cupos</span></p>
-    <a href="#retiros">Ver retiro →</a>
+    <p><strong>Retiro “Raíces”</strong> · Valle del Cocora · 12–15 marzo · <span>Quedan 6 cupos</span></p>
+    <a href="#retiros">Reservar →</a>
   </div>
 
   <!-- ===== Navegación ===== -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="#inicio" class="brand" aria-label="Shanti Yoga, inicio">
+      <a href="#inicio" class="brand" aria-label="Alma Barrientos, inicio">
         <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#lotus"/></svg>
-        <span>Shanti<em>yoga & retiros</em></span>
+        <span>Alma Barrientos<em>yoga · retiros · bienestar</em></span>
       </a>
       <nav class="nav-links" id="navLinks" aria-label="Principal">
-        <a href="#clases">Clases</a>
+        <a href="#experiencias">Experiencias</a>
         <a href="#horarios">Horarios</a>
         <a href="#retiros">Retiros</a>
         <a href="#eventos">Eventos</a>
-        <a href="#maestra">La maestra</a>
+        <a href="#alma">Sobre Alma</a>
         <a href="#planes">Planes</a>
-        <a href="#faq">Preguntas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inscripcion" class="btn btn-gold btn-sm nav-mobile-cta">Reserva tu clase gratis</a>
       </nav>
-      <a href="#inscripcion" class="btn btn-primary btn-sm nav-cta">Reserva tu clase gratis</a>
+      <a href="#inscripcion" class="btn btn-gold btn-sm nav-cta">Reserva tu clase gratis</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== HERO ===== -->
+    <!-- ===== HERO CINEMATOGRÁFICO ===== -->
     <section class="hero" id="inicio">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+      <div class="hero-sky" aria-hidden="true">
+        <div class="sun" data-speed="0.25"></div>
+        <div class="rays"></div>
+        <div class="stars-bg"></div>
+        <svg class="mountains" viewBox="0 0 1440 600" preserveAspectRatio="none">
+          <path data-speed="0.18" class="m1" d="M0,360 C140,300 220,250 340,280 C460,310 520,200 660,210 C800,220 860,300 980,280 C1100,260 1180,190 1300,220 C1380,240 1420,270 1440,280 L1440,600 L0,600Z"/>
+          <path data-speed="0.12" class="m2" d="M0,420 C120,380 240,330 380,360 C520,390 600,320 740,330 C880,340 960,410 1100,390 C1240,370 1320,330 1440,350 L1440,600 L0,600Z"/>
+          <path data-speed="0.06" class="m3" d="M0,480 C160,440 300,420 460,450 C620,480 720,430 880,440 C1040,450 1160,500 1300,480 C1380,470 1420,460 1440,460 L1440,600 L0,600Z"/>
+          <path class="m4" d="M0,545 C200,515 380,525 560,545 C740,565 900,525 1080,535 C1260,545 1360,562 1440,555 L1440,600 L0,600Z"/>
+        </svg>
+        <div class="mist"></div>
       </div>
+
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Yoga · Meditación · Retiros</p>
-          <h1>Vuelve a ti.<br><span class="serif-italic">Respira, muévete,</span><br>florece.</h1>
-          <p class="lead">Clases presenciales y online, eventos y retiros diseñados para que sueltes el estrés, recuperes tu energía y te reconectes con lo que de verdad importa. Sin importar tu edad ni tu nivel.</p>
-          <div class="hero-ctas">
-            <a href="#inscripcion" class="btn btn-primary">Reserva tu primera clase gratis</a>
-            <a href="#retiros" class="btn btn-ghost">Conoce los retiros</a>
+        <div class="hero-copy">
+          <p class="eyebrow light anim" style="--d:.1s">Con Alma Barrientos · RYT-500</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="anim" style="--d:.2s">Yoga para</span></span>
+            <span class="line"><span class="anim" style="--d:.35s">volver a tu</span></span>
+            <span class="line"><span class="anim gold-italic" style="--d:.5s">alma.</span></span>
+          </h1>
+          <p class="lead anim" style="--d:.7s">Clases presenciales y online, eventos y retiros en la naturaleza para soltar el estrés, habitar tu cuerpo y reencontrarte con tu calma. Para todos los cuerpos y todos los niveles.</p>
+          <div class="hero-ctas anim" style="--d:.85s">
+            <a href="#inscripcion" class="btn btn-gold btn-lg">Reserva tu primera clase gratis <span class="arr">→</span></a>
+            <a href="#retiros" class="btn btn-glass btn-lg">Ver retiros</a>
           </div>
-          <ul class="hero-trust">
+          <ul class="hero-trust anim" style="--d:1s">
             <li>
-              <div class="avatars" aria-hidden="true">
-                <span style="--h:20"></span><span style="--h:35"></span><span style="--h:12"></span><span style="--h:48"></span>
-              </div>
-              <span><strong>+2.400</strong> alumnas y alumnos</span>
+              <div class="avatars" aria-hidden="true"><span style="--h:20"></span><span style="--h:35"></span><span style="--h:12"></span><span style="--h:48"></span><span class="more">+</span></div>
+              <span><strong>2.400+</strong> alumnas</span>
             </li>
-            <li><span class="stars" aria-label="5 estrellas">★★★★★</span><span><strong>4,9</strong> · 312 reseñas</span></li>
+            <li><span class="stars" aria-label="5 estrellas">★★★★★</span><span><strong>4,9</strong> en Google</span></li>
           </ul>
         </div>
 
-        <div class="hero-visual reveal delay-1">
-          <div class="arch img" style="--img:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1100&q=80&auto=format&fit=crop')" role="img" aria-label="Mujer meditando al amanecer"></div>
+        <div class="hero-visual anim" style="--d:.5s">
+          <div class="arch-frame">
+            <div class="arch img" style="--img:url('assets/alma-hero.jpg'), url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1100&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')" role="img" aria-label="Alma Barrientos practicando yoga al amanecer"></div>
+          </div>
+          <!-- Sello giratorio -->
+          <a href="#inscripcion" class="seal" aria-label="Primera clase gratis">
+            <svg viewBox="0 0 200 200" class="seal-text">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circ">primera clase gratis · reserva hoy · namasté ·</textPath></text>
+            </svg>
+            <svg viewBox="0 0 48 48" class="seal-lotus"><use href="#lotus"/></svg>
+          </a>
           <!-- Respiración guiada -->
           <div class="breath-card glass">
             <button class="breath" id="breath" aria-label="Iniciar respiración guiada">
-              <span class="breath-ring"></span>
-              <span class="breath-core"></span>
+              <span class="breath-ring"></span><span class="breath-ring r2"></span><span class="breath-core"></span>
             </button>
             <div>
-              <p class="breath-label" id="breathLabel">Respira con nosotros</p>
+              <p class="breath-label" id="breathLabel">Respira conmigo</p>
               <p class="breath-sub" id="breathSub">Toca el círculo · 1 minuto</p>
             </div>
           </div>
-          <div class="badge-float glass">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-            <div><strong>Certificada RYT-500</strong><span>Yoga Alliance</span></div>
-          </div>
         </div>
       </div>
 
-      <a href="#calma" class="scroll-hint" aria-label="Seguir bajando"><span></span></a>
+      <a href="#manifiesto" class="scroll-hint" aria-label="Seguir bajando"><span>Desliza</span><i></i></a>
     </section>
 
-    <!-- ===== FRANJA DE CONFIANZA ===== -->
-    <section class="trust-strip" aria-label="Certificaciones y respaldo">
+    <!-- ===== MARQUEE ===== -->
+    <section class="trust-strip" aria-label="Formación y respaldo">
       <div class="marquee">
         <div class="marquee-track">
-          <span>Yoga Alliance RYT-500</span><i>✦</i>
-          <span>Certificación en Yoga Terapéutico</span><i>✦</i>
-          <span>Mindfulness MBSR</span><i>✦</i>
-          <span>Yin & Restaurativo</span><i>✦</i>
-          <span>Yoga Prenatal</span><i>✦</i>
-          <span>12 años de práctica</span><i>✦</i>
-          <span>+40 retiros guiados</span><i>✦</i>
-          <span>Yoga Alliance RYT-500</span><i>✦</i>
-          <span>Certificación en Yoga Terapéutico</span><i>✦</i>
-          <span>Mindfulness MBSR</span><i>✦</i>
-          <span>Yin & Restaurativo</span><i>✦</i>
-          <span>Yoga Prenatal</span><i>✦</i>
-          <span>12 años de práctica</span><i>✦</i>
-          <span>+40 retiros guiados</span><i>✦</i>
+          <span>Yoga Alliance RYT-500</span><i>✦</i><span>Yoga Terapéutico</span><i>✦</i><span>Mindfulness MBSR</span><i>✦</i><span>Yin & Restaurativo</span><i>✦</i><span>Yoga Prenatal</span><i>✦</i><span>Formada en India & Bali</span><i>✦</i><span>+40 retiros guiados</span><i>✦</i>
+          <span>Yoga Alliance RYT-500</span><i>✦</i><span>Yoga Terapéutico</span><i>✦</i><span>Mindfulness MBSR</span><i>✦</i><span>Yin & Restaurativo</span><i>✦</i><span>Yoga Prenatal</span><i>✦</i><span>Formada en India & Bali</span><i>✦</i><span>+40 retiros guiados</span><i>✦</i>
         </div>
       </div>
     </section>
 
-    <!-- ===== EMPATÍA / PROBLEMA ===== -->
-    <section class="section empathy" id="calma">
-      <div class="container narrow center reveal">
-        <p class="eyebrow">Si estás aquí, quizás…</p>
-        <h2>Tu mente no se apaga, tu cuerpo lo siente <span class="serif-italic">y sabes que mereces una pausa.</span></h2>
+    <!-- ===== MANIFIESTO (palabras que se iluminan con el scroll) ===== -->
+    <section class="section manifesto" id="manifiesto">
+      <div class="container narrow">
+        <p class="eyebrow">Mi filosofía</p>
+        <p class="manifesto-text" id="manifestoText">No necesitas ser flexible, ni tener tiempo de sobra, ni una mente en silencio para empezar. Solo necesitas un espacio seguro, una guía que te sostenga y el valor de regalarte una pausa. El yoga no te cambia: te devuelve a quien ya eras.</p>
+        <div class="manifesto-sign"><span class="script">Alma</span><small>Alma Barrientos · Fundadora</small></div>
       </div>
-      <div class="container pains">
-        <div class="pain reveal"><span>01</span><p>Duermes, pero te despiertas cansada.</p></div>
-        <div class="pain reveal delay-1"><span>02</span><p>Tensión en cuello, espalda y hombros todos los días.</p></div>
-        <div class="pain reveal delay-2"><span>03</span><p>Ansiedad, prisa y la sensación de no tener tiempo para ti.</p></div>
-        <div class="pain reveal delay-3"><span>04</span><p>Quieres empezar, pero te da miedo “no ser flexible”.</p></div>
-      </div>
-      <div class="container narrow center reveal">
-        <p class="bridge">No necesitas ser flexible para hacer yoga. <strong>Necesitas un espacio seguro, una guía cercana y un primer paso.</strong> Eso es exactamente lo que creamos para ti.</p>
+    </section>
+
+    <!-- ===== EMPATÍA ===== -->
+    <section class="section empathy">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Si llegaste hasta aquí, quizás…</p>
+            <h2>Tu mente no se apaga <span class="serif-italic">y tu cuerpo lo está sintiendo.</span></h2>
+          </div>
+        </div>
+        <div class="pains">
+          <div class="pain reveal"><span class="pain-n">01</span><h3>Cansancio constante</h3><p>Duermes, pero te despiertas sin energía.</p></div>
+          <div class="pain reveal delay-1"><span class="pain-n">02</span><h3>Tensión acumulada</h3><p>Cuello, espalda y hombros cargados todos los días.</p></div>
+          <div class="pain reveal delay-2"><span class="pain-n">03</span><h3>Ansiedad y prisa</h3><p>La sensación de que nunca hay tiempo para ti.</p></div>
+          <div class="pain reveal delay-3"><span class="pain-n">04</span><h3>Miedo a empezar</h3><p>“No soy flexible”, “no voy a poder”, “no es para mí”.</p></div>
+        </div>
       </div>
     </section>
 
@@ -165,73 +185,79 @@
     <section class="section benefits">
       <div class="container split">
         <div class="split-media reveal">
-          <div class="img rounded tall" style="--img:url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=900&q=80&auto=format&fit=crop')" role="img" aria-label="Clase de yoga grupal en estudio luminoso"></div>
+          <div class="img rounded tall parallax-img" style="--img:url('assets/clase.jpg'), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=900&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')" role="img" aria-label="Clase grupal de yoga en estudio luminoso"></div>
           <div class="stat-card glass">
-            <strong data-count="92">0</strong><span>% de nuestras alumnas reporta dormir mejor en 4 semanas*</span>
+            <strong><span data-count="92">0</span>%</strong>
+            <span>de las alumnas duerme mejor en 4 semanas*</span>
           </div>
+          <div class="ring-deco" aria-hidden="true"></div>
         </div>
         <div class="split-copy reveal delay-1">
           <p class="eyebrow">Lo que cambia en ti</p>
           <h2>Más que posturas: <span class="serif-italic">una forma de vivir con calma</span></h2>
           <ul class="benefit-list">
-            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/></svg></span><div><h3>Calma mental</h3><p>Herramientas de respiración y meditación para bajar el ruido y gestionar la ansiedad.</p></div></li>
-            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 18c4-1 6-5 8-12 2 7 4 11 8 12"/></svg></span><div><h3>Cuerpo libre de tensión</h3><p>Movilidad, fuerza y postura para aliviar la espalda y moverte con ligereza.</p></div></li>
-            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21V8m0 0c0-3 2-5 5-5 0 3-2 5-5 5zm0 0C12 5 10 3 7 3c0 3 2 5 5 5z"/></svg></span><div><h3>Energía y descanso</h3><p>Duerme más profundo y despierta con energía real, no con cafeína.</p></div></li>
-            <li><span class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c.8-3 2.8-5 5-5s4.2 2 5 5m-2-5c.8-.6 1.8-1 3-1 2.2 0 4.2 2 5 5"/></svg></span><div><h3>Comunidad que abraza</h3><p>Personas como tú, sin juicios, que te acompañan en el proceso.</p></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/></svg></span><div><h3>Calma mental</h3><p>Respiración y meditación para bajar el ruido y gestionar la ansiedad.</p></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 18c4-1 6-5 8-12 2 7 4 11 8 12"/></svg></span><div><h3>Cuerpo libre</h3><p>Movilidad, fuerza y postura para aliviar la espalda y moverte con ligereza.</p></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21V8m0 0c0-3 2-5 5-5 0 3-2 5-5 5zm0 0C12 5 10 3 7 3c0 3 2 5 5 5z"/></svg></span><div><h3>Energía real</h3><p>Duerme profundo y despierta con vitalidad, no con cafeína.</p></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c.8-3 2.8-5 5-5s4.2 2 5 5m-2-5c.8-.6 1.8-1 3-1 2.2 0 4.2 2 5 5"/></svg></span><div><h3>Comunidad</h3><p>Personas como tú, sin juicios, que te acompañan en el camino.</p></div></li>
           </ul>
-          <p class="fine">*Encuesta interna a 180 alumnas, 2025.</p>
+          <p class="fine">*Encuesta interna a 180 alumnas.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== OFERTA: CLASES / EVENTOS / RETIROS ===== -->
-    <section class="section offer" id="clases">
-      <div class="container center narrow reveal">
-        <p class="eyebrow">Encuentra tu práctica</p>
-        <h2>Tres caminos, <span class="serif-italic">un mismo destino: tú</span></h2>
-        <p class="sub">Elige cómo quieres practicar. Todas las experiencias están adaptadas a principiantes.</p>
-      </div>
-      <div class="container cards-3">
-        <article class="offer-card reveal">
-          <div class="img" style="--img:url('https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=80&auto=format&fit=crop')" role="img" aria-label="Clase de yoga"></div>
-          <div class="offer-body">
-            <span class="tag">Semanal</span>
-            <h3>Clases regulares</h3>
-            <p>Hatha, Vinyasa, Yin y Restaurativo. Grupos reducidos de máximo 12 personas, presencial u online en vivo.</p>
-            <ul class="mini-list"><li>Todos los niveles</li><li>Presencial y online</li><li>Grabaciones 7 días</li></ul>
-            <a href="#inscripcion" data-interest="Clases" class="link-arrow">Quiero una clase gratis</a>
+    <!-- ===== EXPERIENCIAS ===== -->
+    <section class="section offer" id="experiencias">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow light">Experiencias</p>
+            <h2>Tres caminos, <span class="serif-italic">un mismo destino: tú</span></h2>
           </div>
-        </article>
-        <article class="offer-card featured reveal delay-1">
-          <div class="img" style="--img:url('https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?w=800&q=80&auto=format&fit=crop')" role="img" aria-label="Retiro de yoga en la naturaleza"></div>
-          <div class="offer-body">
-            <span class="tag tag-gold">Más elegido</span>
-            <h3>Retiros de bienestar</h3>
-            <p>Fines de semana de desconexión en la naturaleza: yoga, meditación, alimentación consciente y descanso profundo.</p>
-            <ul class="mini-list"><li>Todo incluido</li><li>Grupos íntimos</li><li>Destinos seleccionados</li></ul>
-            <a href="#retiros" class="link-arrow">Ver próximo retiro</a>
-          </div>
-        </article>
-        <article class="offer-card reveal delay-2">
-          <div class="img" style="--img:url('https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80&auto=format&fit=crop')" role="img" aria-label="Evento de meditación"></div>
-          <div class="offer-body">
-            <span class="tag">Mensual</span>
-            <h3>Eventos y talleres</h3>
-            <p>Círculos de luna, baños de sonido, talleres de respiración, inversiones y yoga para empresas.</p>
-            <ul class="mini-list"><li>Experiencias únicas</li><li>2 a 4 horas</li><li>Cupos limitados</li></ul>
-            <a href="#eventos" class="link-arrow">Ver agenda</a>
-          </div>
-        </article>
-      </div>
+          <p class="head-note">Todas las experiencias están diseñadas para principiantes y adaptadas a cada cuerpo.</p>
+        </div>
+        <div class="exp-grid">
+          <article class="exp reveal">
+            <div class="exp-img img" style="--img:url('assets/clases.jpg'), url('https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=900&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')" role="img" aria-label="Clase de yoga"></div>
+            <div class="exp-body">
+              <span class="exp-n">01</span>
+              <h3>Clases semanales</h3>
+              <p>Hatha, Vinyasa, Yin y Restaurativo en grupos de máximo 12 personas. Presencial u online en vivo.</p>
+              <ul class="mini-list"><li>Todos los niveles</li><li>Grabaciones 7 días</li></ul>
+              <a href="#inscripcion" data-interest="Clases" class="exp-link">Clase gratis <span>→</span></a>
+            </div>
+          </article>
+          <article class="exp exp-featured reveal delay-1">
+            <div class="exp-img img" style="--img:url('assets/retiro.jpg'), url('https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?w=900&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')" role="img" aria-label="Retiro de yoga en la naturaleza"></div>
+            <div class="exp-body">
+              <span class="tag-gold">Más elegido</span>
+              <span class="exp-n">02</span>
+              <h3>Retiros de bienestar</h3>
+              <p>Fines de semana de desconexión en la naturaleza: yoga, meditación, alimentación consciente y descanso profundo.</p>
+              <ul class="mini-list"><li>Todo incluido</li><li>Grupos íntimos</li></ul>
+              <a href="#retiros" class="exp-link">Próximo retiro <span>→</span></a>
+            </div>
+          </article>
+          <article class="exp reveal delay-2">
+            <div class="exp-img img" style="--img:url('assets/eventos.jpg'), url('https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=900&q=80&auto=format&fit=crop'); --art:url('assets/art-dusk.svg')" role="img" aria-label="Evento de meditación"></div>
+            <div class="exp-body">
+              <span class="exp-n">03</span>
+              <h3>Eventos y talleres</h3>
+              <p>Círculos de luna, baños de sonido, talleres de respiración y programas de bienestar para empresas.</p>
+              <ul class="mini-list"><li>2 a 4 horas</li><li>Cupos limitados</li></ul>
+              <a href="#eventos" class="exp-link">Ver agenda <span>→</span></a>
+            </div>
+          </article>
+        </div>
 
-      <!-- Estilos de clase -->
-      <div class="container styles-grid reveal">
-        <div class="style-pill"><strong>Hatha</strong><span>Base, alineación y respiración</span><em>Suave</em></div>
-        <div class="style-pill"><strong>Vinyasa Flow</strong><span>Movimiento fluido y fuerza</span><em>Activa</em></div>
-        <div class="style-pill"><strong>Yin Yoga</strong><span>Posturas largas, soltar</span><em>Suave</em></div>
-        <div class="style-pill"><strong>Restaurativo</strong><span>Descanso profundo</span><em>Muy suave</em></div>
-        <div class="style-pill"><strong>Yoga Prenatal</strong><span>Para tu embarazo</span><em>Suave</em></div>
-        <div class="style-pill"><strong>Meditación</strong><span>Mente en calma</span><em>Todas</em></div>
+        <div class="styles-grid reveal">
+          <div class="style-pill"><strong>Hatha</strong><span>Base, alineación y respiración</span><em>Suave</em></div>
+          <div class="style-pill"><strong>Vinyasa Flow</strong><span>Movimiento fluido y fuerza</span><em>Activa</em></div>
+          <div class="style-pill"><strong>Yin Yoga</strong><span>Posturas largas para soltar</span><em>Suave</em></div>
+          <div class="style-pill"><strong>Restaurativo</strong><span>Descanso profundo</span><em>Muy suave</em></div>
+          <div class="style-pill"><strong>Prenatal</strong><span>Para tu embarazo</span><em>Suave</em></div>
+          <div class="style-pill"><strong>Meditación</strong><span>Mente en calma</span><em>Todas</em></div>
+        </div>
       </div>
     </section>
 
@@ -249,25 +275,28 @@
             <button data-mode="online" role="tab" aria-selected="false">Online</button>
           </div>
         </div>
-        <div class="days reveal" role="tablist" aria-label="Día de la semana" id="days"></div>
-        <div class="classes-list reveal" id="classesList" aria-live="polite"></div>
-        <p class="fine center">Hora Colombia (GMT-5). Las clases online se transmiten en vivo por Zoom.</p>
+        <div class="schedule-card reveal">
+          <div class="days" role="tablist" aria-label="Día de la semana" id="days"></div>
+          <div class="classes-list" id="classesList" aria-live="polite"></div>
+        </div>
+        <p class="fine center">Hora Colombia (GMT-5) · Las clases online se transmiten en vivo por Zoom.</p>
       </div>
     </section>
 
-    <!-- ===== RETIRO DESTACADO ===== -->
+    <!-- ===== RETIRO ===== -->
     <section class="section retreat" id="retiros">
-      <div class="retreat-bg img" style="--img:url('https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1800&q=80&auto=format&fit=crop')" aria-hidden="true"></div>
+      <div class="retreat-bg img" style="--img:url('assets/cocora.jpg'), url('https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1800&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')" aria-hidden="true"></div>
       <div class="container retreat-grid">
         <div class="retreat-copy reveal">
-          <p class="eyebrow light">Próximo retiro</p>
-          <h2>Raíces<br><span class="serif-italic">4 días para volver a casa</span></h2>
-          <p class="retreat-meta">
-            <span>📍 Valle del Cocora, Quindío</span>
-            <span>🗓 12 – 15 de marzo</span>
-            <span>👥 Máx. 16 personas</span>
-          </p>
-          <p>Un espacio de silencio, naturaleza y práctica para soltar el ruido de la ciudad. Despertarás entre montañas y palmas de cera, practicarás al amanecer y cerrarás cada día con meditación junto al fuego.</p>
+          <p class="eyebrow light">Próximo retiro · Edición 2027</p>
+          <h2 class="big">Raíces</h2>
+          <p class="retreat-sub">4 días para volver a casa</p>
+          <div class="retreat-meta">
+            <span><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Valle del Cocora, Quindío</span>
+            <span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>12 – 15 de marzo</span>
+            <span><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c1-4 3.8-6 7-6s6 2 7 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20c-.6-2.6-2-4.4-4-5.3"/></svg>Máx. 16 personas</span>
+          </div>
+          <p>Silencio, montaña y práctica para soltar el ruido de la ciudad. Despertarás entre palmas de cera, practicarás al amanecer y cerrarás cada día con meditación junto al fuego.</p>
 
           <div class="countdown" id="countdown" data-date="2027-03-12T08:00:00-05:00">
             <div><strong data-cd="d">00</strong><span>días</span></div>
@@ -277,21 +306,21 @@
           </div>
 
           <div class="seats">
-            <div class="seats-bar"><span style="width:62%"></span></div>
-            <p><strong>10 de 16</strong> cupos reservados · Precio preventa hasta el 31 de enero</p>
+            <div class="seats-bar"><span style="--w:62%"></span></div>
+            <p><strong>10 de 16</strong> cupos reservados · Preventa hasta el 31 de enero</p>
           </div>
 
           <div class="hero-ctas">
-            <a href="#inscripcion" data-interest="Retiro" class="btn btn-light">Reservar mi cupo</a>
-            <a href="#itinerario" class="btn btn-outline-light" data-open="itinerary">Ver itinerario</a>
+            <a href="#inscripcion" data-interest="Retiro" class="btn btn-gold btn-lg">Reservar mi cupo <span class="arr">→</span></a>
+            <a href="#itinerario" class="btn btn-glass btn-lg">Ver itinerario</a>
           </div>
         </div>
 
         <div class="retreat-card glass-dark reveal delay-1">
           <h3>Qué incluye</h3>
           <ul class="check-list">
-            <li>3 noches en eco-lodge, habitación compartida o privada</li>
-            <li>Alimentación vegetariana consciente (desayuno, almuerzo y cena)</li>
+            <li>3 noches en eco-lodge (habitación compartida o privada)</li>
+            <li>Alimentación vegetariana consciente</li>
             <li>2 prácticas diarias de yoga + meditación</li>
             <li>Baño de sonido y ceremonia de cacao</li>
             <li>Caminata guiada por el valle</li>
@@ -299,33 +328,42 @@
             <li>Kit de bienvenida y diario de práctica</li>
           </ul>
           <div class="price">
-            <span class="from">Desde</span>
+            <span class="from">Precio preventa desde</span>
             <strong>$1.890.000 <small>COP</small></strong>
             <span class="was">$2.250.000</span>
           </div>
-          <p class="fine">Reserva con el 30%. Pagos a cuotas sin interés.</p>
+          <p class="fine">Separa con el 30% · Cuotas sin interés</p>
         </div>
       </div>
 
-      <!-- Itinerario -->
-      <div class="container itinerary reveal" id="itinerario">
-        <details class="day-item" open>
-          <summary><span>Día 1</span> Llegar y aterrizar</summary>
-          <p>Bienvenida, círculo de intención, yoga suave al atardecer y cena de apertura.</p>
-        </details>
-        <details class="day-item">
-          <summary><span>Día 2</span> Enraizar</summary>
-          <p>Vinyasa al amanecer, caminata por el valle, taller de respiración y Yin nocturno.</p>
-        </details>
-        <details class="day-item">
-          <summary><span>Día 3</span> Soltar</summary>
-          <p>Práctica en silencio, ceremonia de cacao, tiempo libre y baño de sonido.</p>
-        </details>
-        <details class="day-item">
-          <summary><span>Día 4</span> Florecer</summary>
-          <p>Práctica de cierre, brunch de despedida y plan personal para llevar la calma a casa.</p>
-        </details>
+      <div class="container itinerary" id="itinerario">
+        <div class="day-item reveal"><span>Día 1</span><h4>Llegar y aterrizar</h4><p>Bienvenida, círculo de intención, yoga suave al atardecer y cena de apertura.</p></div>
+        <div class="day-item reveal delay-1"><span>Día 2</span><h4>Enraizar</h4><p>Vinyasa al amanecer, caminata por el valle, taller de respiración y Yin nocturno.</p></div>
+        <div class="day-item reveal delay-2"><span>Día 3</span><h4>Soltar</h4><p>Práctica en silencio, ceremonia de cacao, tiempo libre y baño de sonido.</p></div>
+        <div class="day-item reveal delay-3"><span>Día 4</span><h4>Florecer</h4><p>Práctica de cierre, brunch de despedida y tu plan para llevar la calma a casa.</p></div>
       </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="gallery" aria-label="Momentos de nuestra comunidad">
+      <div class="gallery-track">
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dusk.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-portrait.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dusk.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')"></div>
+        <!-- duplicado para bucle -->
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dusk.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-portrait.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-sage.svg')"></div>
+        <div class="g-item tall img" style="--img:url('https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dusk.svg')"></div>
+        <div class="g-item img" style="--img:url('https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=600&q=80&auto=format&fit=crop'); --art:url('assets/art-dawn.svg')"></div>
+      </div>
+      <p class="gallery-tag">@almabarrientos.yoga</p>
     </section>
 
     <!-- ===== EVENTOS ===== -->
@@ -336,17 +374,17 @@
             <p class="eyebrow">Agenda</p>
             <h2>Próximos <span class="serif-italic">eventos</span></h2>
           </div>
-          <a href="#inscripcion" class="link-arrow">Avísame de nuevos eventos</a>
+          <a href="#inscripcion" data-interest="Evento" class="link-arrow">Avísame de nuevos eventos</a>
         </div>
         <div class="event-list">
           <article class="event reveal">
             <div class="event-date"><strong>16</strong><span>Nov</span></div>
             <div class="event-info">
               <h3>Baño de sonido & Yin Yoga</h3>
-              <p>Cuencos tibetanos y cuarzo para un descanso profundo del sistema nervioso.</p>
+              <p>Cuencos tibetanos y de cuarzo para un descanso profundo del sistema nervioso.</p>
               <div class="event-meta"><span>Sáb · 5:00 pm</span><span>Estudio Chapinero</span><span>2 h</span></div>
             </div>
-            <div class="event-cta"><strong>$85.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Baño de sonido & Yin Yoga" class="btn btn-primary btn-sm">Inscribirme</a></div>
+            <div class="event-cta"><strong>$85.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Baño de sonido & Yin Yoga" class="btn btn-dark btn-sm">Inscribirme</a></div>
           </article>
           <article class="event reveal">
             <div class="event-date"><strong>23</strong><span>Nov</span></div>
@@ -355,163 +393,178 @@
               <p>Pranayama práctico para la ansiedad, el insomnio y el estrés diario.</p>
               <div class="event-meta"><span>Dom · 10:00 am</span><span>Online en vivo</span><span>2,5 h</span></div>
             </div>
-            <div class="event-cta"><strong>$60.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Taller de respiración consciente" class="btn btn-primary btn-sm">Inscribirme</a></div>
+            <div class="event-cta"><strong>$60.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Taller de respiración consciente" class="btn btn-dark btn-sm">Inscribirme</a></div>
           </article>
           <article class="event reveal">
             <div class="event-date"><strong>05</strong><span>Dic</span></div>
             <div class="event-info">
               <h3>Círculo de luna llena</h3>
-              <p>Meditación, intención y movimiento intuitivo bajo la luna. Solo para mujeres.</p>
+              <p>Meditación, intención y movimiento intuitivo bajo la luna. Solo mujeres.</p>
               <div class="event-meta"><span>Vie · 7:00 pm</span><span>Terraza La Calera</span><span>3 h</span></div>
             </div>
-            <div class="event-cta"><strong>$95.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Círculo de luna llena" class="btn btn-primary btn-sm">Inscribirme</a></div>
+            <div class="event-cta"><strong>$95.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Círculo de luna llena" class="btn btn-dark btn-sm">Inscribirme</a></div>
           </article>
           <article class="event reveal">
             <div class="event-date"><strong>14</strong><span>Dic</span></div>
             <div class="event-info">
               <h3>Inmersión de fin de año: Soltar y agradecer</h3>
-              <p>Práctica de 108 saludos al sol, journaling y meditación para cerrar el ciclo.</p>
+              <p>108 saludos al sol, journaling y meditación para cerrar el ciclo.</p>
               <div class="event-meta"><span>Dom · 8:00 am</span><span>Estudio Chapinero</span><span>4 h</span></div>
             </div>
-            <div class="event-cta"><strong>$140.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Inmersión de fin de año" class="btn btn-primary btn-sm">Inscribirme</a></div>
+            <div class="event-cta"><strong>$140.000</strong><a href="#inscripcion" data-interest="Evento" data-program="Inmersión de fin de año" class="btn btn-dark btn-sm">Inscribirme</a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== LA MAESTRA ===== -->
-    <section class="section teacher" id="maestra">
+    <!-- ===== SOBRE ALMA ===== -->
+    <section class="section teacher" id="alma">
+      <div class="giant-word" aria-hidden="true">Alma</div>
       <div class="container teacher-grid">
         <div class="teacher-media reveal">
-          <div class="img arch-tall" style="--img:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=80&auto=format&fit=crop')" role="img" aria-label="Retrato de la maestra de yoga"></div>
-          <div class="signature">Valentina</div>
+          <div class="teacher-arch img" style="--img:url('assets/alma.jpg'), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=80&auto=format&fit=crop'); --art:url('assets/art-portrait.svg')" role="img" aria-label="Retrato de Alma Barrientos"></div>
+          <div class="teacher-badge glass">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+            <div><strong>RYT-500</strong><span>Yoga Alliance</span></div>
+          </div>
+          <span class="script signature">Alma</span>
         </div>
         <div class="teacher-copy reveal delay-1">
           <p class="eyebrow">Quién te acompaña</p>
-          <h2>Hola, soy <span class="serif-italic">Valentina Ríos</span></h2>
-          <p class="lead-sm">Maestra de yoga, facilitadora de meditación y creadora de Shanti.</p>
-          <p>Hace 12 años llegué al yoga con una hernia lumbar, insomnio y una vida corporativa que me tenía agotada. Lo que empezó como una recomendación médica se convirtió en mi camino. Me formé en India, Bali y Costa Rica, y hoy acompaño a personas que, como yo, necesitan volver a habitar su cuerpo con amor y sin exigencias.</p>
+          <h2>Hola, soy <span class="serif-italic">Alma Barrientos</span></h2>
+          <p class="lead-sm">Maestra de yoga, facilitadora de meditación y creadora de retiros de bienestar.</p>
+          <p>Hace 12 años llegué al yoga con una hernia lumbar, insomnio y una vida que me tenía agotada. Lo que empezó como una recomendación médica se convirtió en mi camino. Me formé en India, Bali y Costa Rica, y hoy acompaño a personas que, como yo, necesitan volver a habitar su cuerpo con amor y sin exigencias.</p>
           <blockquote>“No vengo a enseñarte posturas perfectas. Vengo a recordarte que ya tienes todo lo que necesitas para sentirte en paz.”</blockquote>
-
           <div class="numbers">
-            <div><strong data-count="12">0</strong><span>años enseñando</span></div>
-            <div><strong data-count="2400" data-suffix="+">0</strong><span>alumnas</span></div>
-            <div><strong data-count="40" data-suffix="+">0</strong><span>retiros guiados</span></div>
-            <div><strong data-count="1200" data-suffix="h">0</strong><span>de formación</span></div>
+            <div><strong><span data-count="12">0</span></strong><span>años enseñando</span></div>
+            <div><strong><span data-count="2400">0</span>+</strong><span>alumnas</span></div>
+            <div><strong><span data-count="40">0</span>+</strong><span>retiros guiados</span></div>
+            <div><strong><span data-count="1200">0</span>h</strong><span>de formación</span></div>
           </div>
         </div>
       </div>
 
       <div class="container timeline reveal">
-        <div class="tl-item"><span>2014</span><h4>Formación RYT-200</h4><p>Rishikesh, India</p></div>
+        <div class="tl-item"><span>2014</span><h4>RYT-200</h4><p>Rishikesh, India</p></div>
         <div class="tl-item"><span>2017</span><h4>Yin & Restaurativo</h4><p>Ubud, Bali</p></div>
-        <div class="tl-item"><span>2019</span><h4>RYT-500 avanzado</h4><p>Yoga Alliance</p></div>
+        <div class="tl-item"><span>2019</span><h4>RYT-500</h4><p>Yoga Alliance</p></div>
         <div class="tl-item"><span>2021</span><h4>Mindfulness MBSR</h4><p>Programa de 8 semanas</p></div>
         <div class="tl-item"><span>2023</span><h4>Yoga terapéutico</h4><p>Espalda y sistema nervioso</p></div>
-        <div class="tl-item"><span>Hoy</span><h4>Shanti</h4><p>Estudio, online y retiros</p></div>
+        <div class="tl-item"><span>Hoy</span><h4>Alma Barrientos</h4><p>Estudio, online y retiros</p></div>
       </div>
     </section>
 
-    <!-- ===== CÓMO FUNCIONA ===== -->
+    <!-- ===== CÓMO EMPEZAR ===== -->
     <section class="section steps">
-      <div class="container center narrow reveal">
-        <p class="eyebrow">Empezar es fácil</p>
-        <h2>Tu primer paso <span class="serif-italic">en 3 momentos</span></h2>
-      </div>
-      <div class="container steps-grid">
-        <div class="step reveal"><span class="step-n">1</span><h3>Completa el formulario</h3><p>Cuéntanos qué buscas. Toma menos de 1 minuto.</p></div>
-        <div class="step reveal delay-1"><span class="step-n">2</span><h3>Te contactamos</h3><p>Por WhatsApp en menos de 24 h para resolver dudas y agendar.</p></div>
-        <div class="step reveal delay-2"><span class="step-n">3</span><h3>Vive tu primera clase</h3><p>Gratis, sin compromiso. Solo trae ropa cómoda; el mat te lo prestamos.</p></div>
+      <div class="container">
+        <div class="section-head center-head reveal">
+          <div>
+            <p class="eyebrow">Empezar es fácil</p>
+            <h2>Tu primer paso <span class="serif-italic">en 3 momentos</span></h2>
+          </div>
+        </div>
+        <div class="steps-grid">
+          <div class="step reveal"><span class="step-n">I</span><h3>Completa el formulario</h3><p>Cuéntame qué buscas. Toma menos de 1 minuto.</p></div>
+          <div class="step reveal delay-1"><span class="step-n">II</span><h3>Te escribimos</h3><p>Por WhatsApp en menos de 24 h para resolver dudas y agendar.</p></div>
+          <div class="step reveal delay-2"><span class="step-n">III</span><h3>Vive tu primera clase</h3><p>Gratis y sin compromiso. Trae ropa cómoda; el mat te lo prestamos.</p></div>
+        </div>
       </div>
     </section>
 
     <!-- ===== TESTIMONIOS ===== -->
     <section class="section testimonials">
-      <div class="container center narrow reveal">
-        <p class="eyebrow">Historias reales</p>
-        <h2>Lo que dicen <span class="serif-italic">quienes ya volvieron a sí</span></h2>
-        <p class="rating-big"><span class="stars">★★★★★</span> 4,9 de 5 · 312 reseñas en Google</p>
-      </div>
-      <div class="container testi-grid">
-        <figure class="testi reveal">
-          <blockquote>“Llegué con ansiedad y dolor de espalda. A las tres semanas dormía de corrido por primera vez en años. Valentina tiene una paciencia y una calidez únicas.”</blockquote>
+      <div class="container">
+        <figure class="testi-hero reveal">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>Llegué con ansiedad y dolor de espalda. A las tres semanas dormía de corrido por primera vez en años. Alma tiene una paciencia y una calidez que no he encontrado en ningún otro lugar.</blockquote>
           <figcaption><span class="av" style="--h:20">C</span><div><strong>Carolina M.</strong><span>Alumna hace 2 años · Bogotá</span></div></figcaption>
         </figure>
-        <figure class="testi reveal delay-1">
-          <blockquote>“El retiro en Cocora me cambió la vida. Volví más ligera, con claridad y con una práctica que sigo haciendo en casa cada mañana.”</blockquote>
-          <figcaption><span class="av" style="--h:40">A</span><div><strong>Andrea P.</strong><span>Retiro Raíces 2025</span></div></figcaption>
-        </figure>
-        <figure class="testi reveal delay-2">
-          <blockquote>“Pensé que el yoga no era para mí por no ser flexible. Me equivoqué. Las clases son para personas reales, y aquí nadie te juzga.”</blockquote>
-          <figcaption><span class="av" style="--h:8">J</span><div><strong>Juan David R.</strong><span>Alumno online · Medellín</span></div></figcaption>
-        </figure>
-        <figure class="testi reveal">
-          <blockquote>“Hice yoga prenatal durante todo mi embarazo. Me sentí acompañada, fuerte y tranquila para el parto. Gracias infinitas.”</blockquote>
-          <figcaption><span class="av" style="--h:30">L</span><div><strong>Laura G.</strong><span>Yoga prenatal</span></div></figcaption>
-        </figure>
-        <figure class="testi reveal delay-1">
-          <blockquote>“Llevamos el programa a nuestro equipo y el clima laboral cambió. Menos estrés, más foco. Altamente recomendado.”</blockquote>
-          <figcaption><span class="av" style="--h:50">M</span><div><strong>Marcela T.</strong><span>Gerente de Talento Humano</span></div></figcaption>
-        </figure>
-        <figure class="testi reveal delay-2">
-          <blockquote>“Los baños de sonido son mi momento favorito del mes. Salgo como si hubiera dormido una semana entera.”</blockquote>
-          <figcaption><span class="av" style="--h:15">S</span><div><strong>Sofía V.</strong><span>Comunidad Shanti</span></div></figcaption>
-        </figure>
+        <div class="rating-row reveal"><span class="stars">★★★★★</span><span><strong>4,9 de 5</strong> · 312 reseñas en Google</span></div>
+        <div class="testi-grid">
+          <figure class="testi reveal">
+            <blockquote>“El retiro en Cocora me cambió la vida. Volví más ligera, con claridad y con una práctica que sigo haciendo cada mañana.”</blockquote>
+            <figcaption><span class="av" style="--h:40">A</span><div><strong>Andrea P.</strong><span>Retiro Raíces</span></div></figcaption>
+          </figure>
+          <figure class="testi reveal delay-1">
+            <blockquote>“Pensé que el yoga no era para mí por no ser flexible. Me equivoqué. Aquí nadie te juzga.”</blockquote>
+            <figcaption><span class="av" style="--h:8">J</span><div><strong>Juan David R.</strong><span>Alumno online · Medellín</span></div></figcaption>
+          </figure>
+          <figure class="testi reveal delay-2">
+            <blockquote>“Hice yoga prenatal todo mi embarazo. Me sentí acompañada, fuerte y tranquila para el parto.”</blockquote>
+            <figcaption><span class="av" style="--h:30">L</span><div><strong>Laura G.</strong><span>Yoga prenatal</span></div></figcaption>
+          </figure>
+          <figure class="testi reveal">
+            <blockquote>“Llevamos el programa a nuestro equipo y el clima laboral cambió. Menos estrés, más foco.”</blockquote>
+            <figcaption><span class="av" style="--h:50">M</span><div><strong>Marcela T.</strong><span>Gerente de Talento Humano</span></div></figcaption>
+          </figure>
+          <figure class="testi reveal delay-1">
+            <blockquote>“Los baños de sonido son mi momento favorito del mes. Salgo como si hubiera dormido una semana.”</blockquote>
+            <figcaption><span class="av" style="--h:15">S</span><div><strong>Sofía V.</strong><span>Comunidad Alma</span></div></figcaption>
+          </figure>
+          <figure class="testi reveal delay-2">
+            <blockquote>“El mejor regalo que me he dado. Desde la primera clase me sentí en casa.”</blockquote>
+            <figcaption><span class="av" style="--h:25">P</span><div><strong>Paula R.</strong><span>Alumna desde 2024</span></div></figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- ===== PLANES ===== -->
     <section class="section pricing" id="planes">
-      <div class="container center narrow reveal">
-        <p class="eyebrow">Planes</p>
-        <h2>Invierte en tu <span class="serif-italic">bienestar</span></h2>
-        <p class="sub">Sin matrícula. Sin permanencia. Cancela cuando quieras.</p>
-      </div>
-      <div class="container price-grid">
-        <div class="plan reveal">
-          <h3>Clase de prueba</h3>
-          <p class="plan-desc">Para conocernos sin compromiso.</p>
-          <p class="plan-price"><strong>Gratis</strong></p>
-          <ul class="check-list dark">
-            <li>1 clase presencial u online</li>
-            <li>Valoración inicial de tu práctica</li>
-            <li>Mat y accesorios incluidos</li>
-          </ul>
-          <a href="#inscripcion" data-interest="Clases" data-program="Clase de prueba gratis" class="btn btn-ghost w-full">Reservar gratis</a>
+      <div class="container">
+        <div class="section-head center-head reveal">
+          <div>
+            <p class="eyebrow">Planes</p>
+            <h2>Invierte en tu <span class="serif-italic">bienestar</span></h2>
+            <p class="sub">Sin matrícula · Sin permanencia · Cancela cuando quieras</p>
+          </div>
         </div>
-        <div class="plan plan-featured reveal delay-1">
-          <span class="plan-badge">Recomendado</span>
-          <h3>Mensual 8 clases</h3>
-          <p class="plan-desc">El ritmo ideal para ver cambios reales.</p>
-          <p class="plan-price"><strong>$260.000</strong><span>COP / mes</span></p>
-          <ul class="check-list dark">
-            <li>8 clases al mes (2 por semana)</li>
-            <li>Presencial u online, tú eliges</li>
-            <li>Acceso a grabaciones</li>
-            <li>10% dto. en eventos y retiros</li>
-          </ul>
-          <a href="#inscripcion" data-interest="Clases" data-program="Plan mensual 8 clases" class="btn btn-primary w-full">Empezar ahora</a>
+        <div class="price-grid">
+          <div class="plan reveal">
+            <h3>Clase de prueba</h3>
+            <p class="plan-desc">Para conocernos sin compromiso.</p>
+            <p class="plan-price"><strong>Gratis</strong></p>
+            <ul class="check-list dark">
+              <li>1 clase presencial u online</li>
+              <li>Valoración inicial de tu práctica</li>
+              <li>Mat y accesorios incluidos</li>
+            </ul>
+            <a href="#inscripcion" data-interest="Clases" data-program="Clase de prueba gratis" class="btn btn-outline w-full">Reservar gratis</a>
+          </div>
+          <div class="plan plan-featured reveal delay-1">
+            <span class="plan-badge">Recomendado</span>
+            <h3>Mensual · 8 clases</h3>
+            <p class="plan-desc">El ritmo ideal para ver cambios reales.</p>
+            <p class="plan-price"><strong>$260.000</strong><span>COP / mes</span></p>
+            <ul class="check-list">
+              <li>8 clases al mes (2 por semana)</li>
+              <li>Presencial u online, tú eliges</li>
+              <li>Acceso a grabaciones</li>
+              <li>10% dto. en eventos y retiros</li>
+            </ul>
+            <a href="#inscripcion" data-interest="Clases" data-program="Plan mensual 8 clases" class="btn btn-gold w-full">Empezar ahora</a>
+          </div>
+          <div class="plan reveal delay-2">
+            <h3>Ilimitado</h3>
+            <p class="plan-desc">Para hacer del yoga tu estilo de vida.</p>
+            <p class="plan-price"><strong>$380.000</strong><span>COP / mes</span></p>
+            <ul class="check-list dark">
+              <li>Clases ilimitadas</li>
+              <li>1 evento mensual incluido</li>
+              <li>Biblioteca online completa</li>
+              <li>15% dto. en retiros</li>
+            </ul>
+            <a href="#inscripcion" data-interest="Clases" data-program="Plan ilimitado" class="btn btn-outline w-full">Elegir ilimitado</a>
+          </div>
         </div>
-        <div class="plan reveal delay-2">
-          <h3>Ilimitado</h3>
-          <p class="plan-desc">Para hacer del yoga tu estilo de vida.</p>
-          <p class="plan-price"><strong>$380.000</strong><span>COP / mes</span></p>
-          <ul class="check-list dark">
-            <li>Clases ilimitadas</li>
-            <li>1 evento mensual incluido</li>
-            <li>Biblioteca online completa</li>
-            <li>15% dto. en retiros</li>
-          </ul>
-          <a href="#inscripcion" data-interest="Clases" data-program="Plan ilimitado" class="btn btn-ghost w-full">Elegir ilimitado</a>
+        <div class="guarantee reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>
+          <div>
+            <h3>Garantía de calma · 15 días</h3>
+            <p>Si en tus primeros 15 días sientes que no es para ti, te devolvemos el 100% de tu plan mensual. Sin preguntas.</p>
+          </div>
+          <a href="#inscripcion" data-interest="Privadas / Empresas" class="link-arrow">Clases privadas y empresas</a>
         </div>
-      </div>
-      <div class="container guarantee reveal">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>
-        <div>
-          <h3>Garantía de calma: 15 días</h3>
-          <p>Si en tus primeros 15 días sientes que no es para ti, te devolvemos el 100% de tu plan mensual. Sin preguntas.</p>
-        </div>
-        <span class="pill-link">También: clases privadas y yoga para empresas · <a href="#inscripcion" data-interest="Privadas / Empresas">Cotizar</a></span>
       </div>
     </section>
 
@@ -522,64 +575,64 @@
           <p class="eyebrow">Preguntas frecuentes</p>
           <h2>Resolvemos <span class="serif-italic">tus dudas</span></h2>
           <p>¿No encuentras tu respuesta? Escríbenos y te respondemos con calma y en minutos.</p>
-          <a href="#" class="btn btn-ghost js-whatsapp">Escribir por WhatsApp</a>
+          <a href="#" class="btn btn-dark js-whatsapp">Escribir por WhatsApp</a>
         </div>
         <div class="faq-list reveal delay-1">
-          <details><summary>Nunca he hecho yoga y no soy flexible, ¿puedo empezar?</summary><p>¡Por supuesto! La mayoría de nuestras alumnas empezaron desde cero. La flexibilidad es un resultado del yoga, no un requisito. Todas las clases ofrecen variaciones para cada cuerpo.</p></details>
+          <details><summary>Nunca he hecho yoga y no soy flexible, ¿puedo empezar?</summary><p>¡Claro! La mayoría de las alumnas empezaron desde cero. La flexibilidad es un resultado del yoga, no un requisito. Todas las clases ofrecen variaciones para cada cuerpo.</p></details>
           <details><summary>¿Qué necesito llevar a la clase?</summary><p>Ropa cómoda, agua y ganas de regalarte un momento. Mat, bloques, mantas y cojines están incluidos en el estudio.</p></details>
-          <details><summary>Tengo una lesión o condición médica, ¿es seguro?</summary><p>Contamos con formación en yoga terapéutico. Cuéntanos tu caso en el formulario y te recomendaremos la clase más adecuada. Si es necesario, te pediremos aval médico.</p></details>
-          <details><summary>¿Cómo funcionan las clases online?</summary><p>Son en vivo por Zoom, con cámara opcional y corrección personalizada si la activas. Además, la grabación queda disponible por 7 días.</p></details>
-          <details><summary>¿Cómo reservo un cupo en un retiro?</summary><p>Completa el formulario seleccionando “Retiro”. Te enviaremos toda la información y el link de pago del 30% para separar tu cupo. El saldo puede pagarse en cuotas.</p></details>
+          <details><summary>Tengo una lesión o condición médica, ¿es seguro?</summary><p>Alma tiene formación en yoga terapéutico. Cuéntanos tu caso en el formulario y te recomendaremos la clase más adecuada. Si es necesario, pediremos aval médico.</p></details>
+          <details><summary>¿Cómo funcionan las clases online?</summary><p>Son en vivo por Zoom, con cámara opcional y corrección personalizada si la activas. La grabación queda disponible 7 días.</p></details>
+          <details><summary>¿Cómo reservo un cupo en un retiro?</summary><p>Completa el formulario eligiendo “Retiro”. Te enviaremos toda la información y el link de pago del 30% para separar tu cupo. El saldo se puede pagar en cuotas.</p></details>
           <details><summary>¿Cuál es la política de cancelación?</summary><p>Clases: cancela hasta 4 horas antes sin costo. Retiros: reembolso del 100% hasta 30 días antes, o traslado de tu cupo a otra fecha.</p></details>
-          <details><summary>¿Qué medios de pago aceptan?</summary><p>Tarjetas de crédito y débito, PSE, Nequi, Daviplata, transferencia y pagos internacionales con PayPal.</p></details>
-          <details><summary>¿Ofrecen yoga para empresas?</summary><p>Sí. Diseñamos programas de bienestar corporativo presenciales u online: pausas activas, manejo del estrés y talleres de mindfulness.</p></details>
+          <details><summary>¿Qué medios de pago aceptan?</summary><p>Tarjetas de crédito y débito, PSE, Nequi, Daviplata, transferencia y PayPal para pagos internacionales.</p></details>
+          <details><summary>¿Ofrecen yoga para empresas?</summary><p>Sí. Diseñamos programas de bienestar corporativo presenciales u online: pausas activas, manejo del estrés y mindfulness.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- ===== FORMULARIO DE INSCRIPCIÓN ===== -->
+    <!-- ===== FORMULARIO ===== -->
     <section class="section signup" id="inscripcion">
-      <div class="signup-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
+      <div class="signup-bg" aria-hidden="true"></div>
       <div class="container signup-grid">
         <div class="signup-copy reveal">
-          <p class="eyebrow">Inscripción</p>
-          <h2>Tu momento <span class="serif-italic">es ahora</span></h2>
-          <p>Déjanos tus datos y te contactaremos por WhatsApp en menos de 24 horas para reservar tu clase, evento o retiro.</p>
+          <p class="eyebrow light">Inscripción</p>
+          <h2>Tu momento <span class="gold-italic">es ahora</span></h2>
+          <p>Déjanos tus datos y te escribiremos por WhatsApp en menos de 24 horas para reservar tu clase, evento o retiro.</p>
           <ul class="perks">
             <li><span>✓</span> Primera clase 100% gratis</li>
             <li><span>✓</span> Atención personalizada y humana</li>
             <li><span>✓</span> Sin compromiso ni permanencia</li>
             <li><span>✓</span> Tus datos están protegidos</li>
           </ul>
-          <div class="mini-testi">
-            <p>“El mejor regalo que me he dado. Desde la primera clase me sentí en casa.”</p>
-            <span>— Paula R., alumna desde 2024</span>
+          <div class="signup-alma">
+            <div class="mini-avatar img" style="--img:url('assets/alma.jpg'), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=200&q=80&auto=format&fit=crop'); --art:url('assets/art-portrait.svg')"></div>
+            <p>“Te espero en tu primera clase. Será un placer acompañarte.”<span>— Alma</span></p>
           </div>
         </div>
 
         <div class="form-card reveal delay-1">
-          <div class="form-progress" aria-hidden="true"><span id="progressBar"></span></div>
-          <p class="form-step-label" id="stepLabel">Paso 1 de 3 · ¿Qué te interesa?</p>
+          <div class="form-top">
+            <p class="form-step-label" id="stepLabel">Paso 1 de 3 · ¿Qué te interesa?</p>
+            <div class="form-progress" aria-hidden="true"><span id="progressBar"></span></div>
+          </div>
 
           <form id="signupForm" novalidate>
-            <!-- Paso 1 -->
             <fieldset class="step-panel active" data-step="1">
               <legend class="sr-only">¿Qué te interesa?</legend>
               <div class="choice-grid">
-                <label class="choice"><input type="radio" name="interes" value="Clases" required><span><b>🧘</b><strong>Clases</strong><small>Presencial u online</small></span></label>
-                <label class="choice"><input type="radio" name="interes" value="Retiro"><span><b>🌿</b><strong>Retiro</strong><small>Raíces · Marzo</small></span></label>
-                <label class="choice"><input type="radio" name="interes" value="Evento"><span><b>🌙</b><strong>Evento</strong><small>Talleres y círculos</small></span></label>
-                <label class="choice"><input type="radio" name="interes" value="Privadas / Empresas"><span><b>✨</b><strong>Privadas / Empresas</strong><small>A tu medida</small></span></label>
+                <label class="choice"><input type="radio" name="interes" value="Clases" required><span><b><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><path d="M12 8v6m-6 6c2-2 4-3 6-3s4 1 6 3M5 11l7 3 7-3"/></svg></b><strong>Clases</strong><small>Presencial u online</small></span></label>
+                <label class="choice"><input type="radio" name="interes" value="Retiro"><span><b><svg viewBox="0 0 24 24"><path d="M3 20l6-10 4 6 3-4 5 8z"/><circle cx="17" cy="6" r="2"/></svg></b><strong>Retiro</strong><small>Raíces · Marzo</small></span></label>
+                <label class="choice"><input type="radio" name="interes" value="Evento"><span><b><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></b><strong>Evento</strong><small>Talleres y círculos</small></span></label>
+                <label class="choice"><input type="radio" name="interes" value="Privadas / Empresas"><span><b><svg viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-4 3.5 1.5 5L12 14l-4.5 3 1.5-5-4-3.5L10 8z"/></svg></b><strong>Privadas / Empresas</strong><small>A tu medida</small></span></label>
               </div>
               <div class="field">
                 <label for="program">Programa o fecha que te interesa <span class="opt">(opcional)</span></label>
                 <input id="program" name="programa" type="text" placeholder="Ej: Clase de prueba, Vinyasa martes 7 pm…" />
               </div>
               <p class="error" data-error="1"></p>
-              <button type="button" class="btn btn-primary w-full" data-next>Continuar</button>
+              <button type="button" class="btn btn-dark btn-lg w-full" data-next>Continuar <span class="arr">→</span></button>
             </fieldset>
 
-            <!-- Paso 2 -->
             <fieldset class="step-panel" data-step="2">
               <legend class="sr-only">Sobre tu práctica</legend>
               <p class="q">¿Cuál es tu experiencia con el yoga?</p>
@@ -600,18 +653,15 @@
               </div>
               <div class="field">
                 <label for="modalidad">Modalidad preferida</label>
-                <select id="modalidad" name="modalidad">
-                  <option>Presencial</option><option>Online</option><option>Me da igual</option>
-                </select>
+                <select id="modalidad" name="modalidad"><option>Presencial</option><option>Online</option><option>Me da igual</option></select>
               </div>
               <p class="error" data-error="2"></p>
               <div class="btn-row">
-                <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
-                <button type="button" class="btn btn-primary" data-next>Continuar</button>
+                <button type="button" class="btn btn-outline" data-prev>Atrás</button>
+                <button type="button" class="btn btn-dark" data-next>Continuar <span class="arr">→</span></button>
               </div>
             </fieldset>
 
-            <!-- Paso 3 -->
             <fieldset class="step-panel" data-step="3">
               <legend class="sr-only">Tus datos</legend>
               <div class="field">
@@ -640,31 +690,22 @@
                 <input type="checkbox" name="consentimiento" required />
                 <span>Autorizo el tratamiento de mis datos personales conforme a la <a href="#" class="js-privacy">Política de Privacidad</a> (Ley 1581 de 2012) para ser contactada sobre clases, eventos y retiros.</span>
               </label>
-
-              <!-- Campos ocultos para medir campañas (UTM de Meta Ads) -->
-              <input type="hidden" name="utm_source" />
-              <input type="hidden" name="utm_medium" />
-              <input type="hidden" name="utm_campaign" />
-              <input type="hidden" name="utm_content" />
-              <input type="hidden" name="fbclid" />
-              <!-- Anti-spam -->
+              <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" /><input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" /><input type="hidden" name="fbclid" />
               <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
               <p class="error" data-error="3"></p>
               <div class="btn-row">
-                <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
-                <button type="submit" class="btn btn-primary" id="submitBtn">Quiero inscribirme</button>
+                <button type="button" class="btn btn-outline" data-prev>Atrás</button>
+                <button type="submit" class="btn btn-gold" id="submitBtn">Quiero inscribirme</button>
               </div>
-              <p class="secure">🔒 Información 100% confidencial. Nunca enviamos spam.</p>
+              <p class="secure"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Información 100% confidencial. Nunca enviamos spam.</p>
             </fieldset>
           </form>
 
-          <!-- Éxito -->
           <div class="success" id="success" hidden>
             <div class="success-lotus"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#lotus"/></svg></div>
-            <h3>¡Gracias, <span id="successName">bienvenida</span>! 🌿</h3>
+            <h3>¡Gracias, <span id="successName">bienvenida</span>!</h3>
             <p>Recibimos tu inscripción. En menos de 24 horas te escribiremos por WhatsApp. Mientras tanto, regálate tres respiraciones profundas.</p>
-            <a href="#" class="btn btn-primary js-whatsapp" id="successWa">Hablar ahora por WhatsApp</a>
+            <a href="#" class="btn btn-gold js-whatsapp" id="successWa">Hablar ahora por WhatsApp</a>
           </div>
         </div>
       </div>
@@ -672,10 +713,14 @@
 
     <!-- ===== CTA FINAL ===== -->
     <section class="final-cta">
+      <svg class="final-mountains" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
+        <path class="fm1" d="M0,160 C140,110 260,80 400,110 C540,140 620,60 780,70 C940,80 1020,150 1160,130 C1300,110 1380,90 1440,100 L1440,300 L0,300Z"/>
+        <path class="fm2" d="M0,220 C180,190 320,180 500,205 C680,230 800,190 980,195 C1160,200 1300,230 1440,220 L1440,300 L0,300Z"/>
+      </svg>
       <div class="container center narrow reveal">
         <svg class="final-lotus" viewBox="0 0 48 48" aria-hidden="true"><use href="#lotus"/></svg>
-        <h2>La paz que buscas<br><span class="serif-italic">empieza con una respiración.</span></h2>
-        <a href="#inscripcion" class="btn btn-light">Reservar mi clase gratis</a>
+        <h2>La paz que buscas<br><span class="gold-italic">empieza con una respiración.</span></h2>
+        <a href="#inscripcion" class="btn btn-gold btn-lg">Reservar mi clase gratis <span class="arr">→</span></a>
       </div>
     </section>
   </main>
@@ -684,7 +729,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="#inicio" class="brand light"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#lotus"/></svg><span>Shanti<em>yoga & retiros</em></span></a>
+        <a href="#inicio" class="brand light"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#lotus"/></svg><span>Alma Barrientos<em>yoga · retiros · bienestar</em></span></a>
         <p>Un espacio para respirar, moverte y volver a ti.</p>
         <div class="socials">
           <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
@@ -695,13 +740,13 @@
       </div>
       <div>
         <h4>Explora</h4>
-        <a href="#clases">Clases</a><a href="#horarios">Horarios</a><a href="#retiros">Retiros</a><a href="#eventos">Eventos</a><a href="#planes">Planes</a>
+        <a href="#experiencias">Experiencias</a><a href="#horarios">Horarios</a><a href="#retiros">Retiros</a><a href="#eventos">Eventos</a><a href="#planes">Planes</a>
       </div>
       <div>
         <h4>Contacto</h4>
         <a href="#" class="js-whatsapp">WhatsApp +57 300 000 0000</a>
-        <a href="mailto:hola@shantiyoga.co">hola@shantiyoga.co</a>
-        <span>Cra. 7 # 60-20, Chapinero, Bogotá</span>
+        <a href="mailto:hola@almabarrientos.com">hola@almabarrientos.com</a>
+        <span>Chapinero, Bogotá · Colombia</span>
         <span>Lun a Sáb · 6:00 am – 8:00 pm</span>
       </div>
       <div>
@@ -713,33 +758,28 @@
         </form>
       </div>
     </div>
+    <div class="footer-word" aria-hidden="true">Alma Barrientos</div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Shanti Yoga & Retiros. Todos los derechos reservados.</span>
+      <span>© <span id="year"></span> Alma Barrientos · Yoga & Retiros. Todos los derechos reservados.</span>
       <span><a href="#" class="js-privacy">Política de privacidad</a> · <a href="#">Términos</a></span>
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
   <a href="#" class="wa-float js-whatsapp" aria-label="Escríbenos por WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
   </a>
 
-  <!-- CTA fija en móvil -->
-  <div class="mobile-cta" id="mobileCta">
-    <a href="#inscripcion" class="btn btn-primary w-full">Reserva tu clase gratis</a>
-  </div>
+  <div class="mobile-cta" id="mobileCta"><a href="#inscripcion" class="btn btn-gold w-full">Reserva tu clase gratis</a></div>
 
-  <!-- Modal privacidad -->
   <dialog class="modal" id="privacyModal">
     <form method="dialog">
       <h3>Política de tratamiento de datos</h3>
-      <p>En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013, Shanti Yoga & Retiros tratará tus datos personales (nombre, teléfono, correo, ciudad e información de salud que decidas compartir) con la finalidad de contactarte, gestionar tus inscripciones, enviarte información de clases, eventos y retiros y mejorar nuestros servicios.</p>
-      <p>Puedes conocer, actualizar, rectificar o solicitar la supresión de tus datos escribiendo a <strong>hola@shantiyoga.co</strong>. Tus datos no serán vendidos ni compartidos con terceros con fines comerciales.</p>
-      <button class="btn btn-primary">Entendido</button>
+      <p>En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013, Alma Barrientos · Yoga & Retiros tratará tus datos personales (nombre, teléfono, correo, ciudad e información de salud que decidas compartir) para contactarte, gestionar tus inscripciones, enviarte información de clases, eventos y retiros y mejorar nuestros servicios.</p>
+      <p>Puedes conocer, actualizar, rectificar o solicitar la supresión de tus datos escribiendo a <strong>hola@almabarrientos.com</strong>. Tus datos no serán vendidos ni compartidos con terceros con fines comerciales.</p>
+      <button class="btn btn-dark">Entendido</button>
     </form>
   </dialog>
 
-  <!-- SVG sprite -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="lotus" viewBox="0 0 48 48">
       <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
